@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://vaynemyko.com',
+  site: 'https://rhyzetoken.com/',
   integrations: [
     tailwind(),
     svelte(),

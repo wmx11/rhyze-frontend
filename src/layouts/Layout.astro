@@ -12,12 +12,11 @@ export interface Props {
   image?: string;
 }
 
-const defaultDescription =
-  'Forge your own path. Become a digital blacksmith. Learn how to monetize your skills and knowledge. Master the art of experience, time, and mindset.';
+const defaultDescription = 'Rhyze and shine.';
 
 const { title, description = defaultDescription, image } = Astro.props;
 
-const metaImageUrl = `${Astro.url.origin}/${image ?? 'modiggo-meta-image.png'}`;
+const metaImageUrl = `${Astro.url.origin}/${image ?? ''}`;
 ---
 
 <!DOCTYPE html>
@@ -38,7 +37,7 @@ const metaImageUrl = `${Astro.url.origin}/${image ?? 'modiggo-meta-image.png'}`;
         title: `Rhyze - ${title}`,
         description,
         creator: '@vaynemyko',
-        site: 'https://vaynemyko.com',
+        site: 'https://rhyzetoken.com',
         image: metaImageUrl,
       }}
     />
@@ -77,7 +76,6 @@ const metaImageUrl = `${Astro.url.origin}/${image ?? 'modiggo-meta-image.png'}`;
     <GlobalStyles />
     <script>
       import '../scripts/baseAnimation';
-      import '../scripts/textHighlight';
       import '../scripts/scrollTo';
     </script>
   </body>
