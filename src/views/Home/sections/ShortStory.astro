@@ -1,0 +1,27 @@
+---
+import Container from '../../../components/Container.astro';
+import Section from '../../../components/Section.astro';
+import Pinacolada from '../../../assets/pinacolada.png';
+import Parasol from '../../../assets/parasol.png';
+import { Image } from 'astro:assets';
+---
+
+<Section className="min-h-screen bg-dark-sand flex items-center relative">
+  <Container>
+    <div class="mx-auto max-w-2xl text-lg text-center font-bold animate">
+      <p>
+        The summer is here and Rhyze is bringing the sunshine! We have been hard
+        at work blending together DeFi protocols and proven crypto strategies to
+        create what might be the hottest new token in DeFi! So if you are
+        looking for a community-focused joyride with tons of excitement and
+        potential, Rhyze and Shine!
+      </p>
+    </div>
+  </Container>
+  <div class="absolute bottom-[30px] right-[30px]">
+    <Image src={Pinacolada} alt="Rhyze Pinacolada" />
+  </div>
+  <div class="absolute bottom-[90px] left-0">
+    <Image src={Parasol} alt="Rhyze Parasol" />
+  </div>
+</Section>

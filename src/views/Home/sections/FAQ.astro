@@ -1,0 +1,24 @@
+---
+import Container from '../../../components/Container.astro';
+import H1 from '../../../components/H1.astro';
+import Section from '../../../components/Section.astro';
+
+const faq = await Astro.glob('../../../content/faq/*.md');
+---
+
+<Section className="bg-black">
+  <Container>
+    <div class="text-white text-center space-y-32 max-w-2xl mx-auto">
+      {
+        faq.map((item) => (
+          <div class="space-y-4 animate">
+            <H1>{item.frontmatter.title}</H1>
+            <div class="text-lg">
+              <Fragment set:html={item.compiledContent()} />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+</Section>

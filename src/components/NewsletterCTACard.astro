@@ -1,0 +1,37 @@
+---
+import GradientBlur from './GradientBlur.astro';
+import H2 from './H2.astro';
+import NewsletterForm from './svelte/NewsletterForm.svelte';
+import { Image } from 'astro:assets';
+import Anvil from '../assets/anvil.png';
+---
+
+<div
+  class="card bg-primary w-full max-w-5xl p-6 md:p-24 space-y-8 relative overflow-hidden"
+>
+  <H2 className="animate z-10 text-center">
+    Join "The Anvil". Start your path to becoming a Digital Blacksmith today.
+  </H2>
+
+  <p class="animate z-10 text-center">
+    Join other readers on "The Anvil". Receive deep dives and tips on topics
+    from crafting experiences, tempering mind, to alchemy, one-person
+    businesses, and time management. Start your transformation today. Let's
+    hammer out those red-hot ideas into meaningful businesses.
+  </p>
+  <div class="z-10 p-6 card bg-black/30 animate">
+    <div>
+      <NewsletterForm client:visible />
+    </div>
+  </div>
+
+  <GradientBlur />
+
+  <div class="absolute w-[50px] h-[50px] top-[2%] left-[2%] float z-0">
+    <Image
+      src={Anvil}
+      alt="Anvil image"
+      class="absolute inset-0 w-full h-full hover:scale-125 transition"
+    />
+  </div>
+</div>
