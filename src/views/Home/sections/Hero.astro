@@ -2,21 +2,20 @@
 import { Image } from 'astro:assets';
 import H1 from '../../../components/H1.astro';
 import HeroWrapper from '../../../components/HeroWrapper.astro';
-import RhyzeLogo from '../../../assets/rhyze_logo.png';
+import RhyzeLogo from '../../../assets/rhyze_logo_outline.png';
+import PalmTree from '../../../assets/palm_tree.png';
+import Countdown from '../../../components/svelte/Countdown.svelte';
 ---
 
-<section>
+<section class="relative overflow-hidden">
   <HeroWrapper className="justify-center items-center">
-    <div class="space-y-16 text-center flex flex-col">
+    <div class="space-y-12 md:space-y-16 text-center flex flex-col">
       <div class="flex items-center justify-center">
-        <Image src={RhyzeLogo} alt="Rhyze hero logo" width={200}/>
+        <Image src={RhyzeLogo} alt="Rhyze hero logo" width={200} class='w-[100px] md:w-auto'/>
       </div>
       <H1 className="md:text-7xl animate">Rhyze and Shine</H1>
       <div class="animate">
-        <span
-          class="p-4 bg-primary text-secondary font-black text-7xl rounded-[23px]"
-          >07:04:15:02</span
-        >
+        <Countdown client:load />
       </div>
       <p class="font-bold text-3xl animate">Until fair launch</p>
       <p class="font-bold text-3xl animate">
@@ -26,4 +25,14 @@ import RhyzeLogo from '../../../assets/rhyze_logo.png';
       </p>
     </div>
   </HeroWrapper>
+  <div
+    class="hidden lg:block absolute top-[-15%] left-[-100%] rotate-[15deg] z-[50] animate-palm-1"
+  >
+    <Image src={PalmTree} alt="Palm tree" width={1300} />
+  </div>
+  <div
+    class="hidden lg:block absolute top-[-20%] right-[-100%] rotate-[-25deg] z-[50] animate-palm-2"
+  >
+    <Image src={PalmTree} alt="Palm tree" width={1500} class="scale-x-[-1]" />
+  </div>
 </section>

@@ -1,21 +1,19 @@
-import routes from './routes';
-
 const navigation = [
   {
     label: 'dApp',
-    href: '#about',
+    href: '#dApp',
   },
   {
     label: 'Raffle',
-    href: routes.resources,
+    href: '#raffle',
   },
   {
     label: 'Whitepaper',
-    href: routes.blog,
+    href: 'https://warfi.gitbook.io/rhyze-token/',
   },
   {
     label: 'Discord',
-    href: '#newsletter',
+    href: 'https://discord.gg/hfvRJ4n4qG',
   },
 ];
 
@@ -29,52 +27,22 @@ export const footerNavigation = [
     navigation: [
       {
         label: 'Twitter',
-        href: 'https://twitter.com/vaynemyko',
+        href: 'https://twitter.com/Rhyzetoken',
       },
       {
         label: 'Telegram',
-        href: 'https://www.linkedin.com/in/vainius-mykolaitis-07baa412a/',
+        href: 'https://t.me/rhyzefinance',
       },
       {
         label: 'Medium',
-        href: 'https://www.linkedin.com/in/vainius-mykolaitis-07baa412a/',
+        href: 'https://medium.com/@rhyzetoken',
       },
       {
         label: 'Discord',
-        href: 'https://www.linkedin.com/in/vainius-mykolaitis-07baa412a/',
+        href: 'https://discord.gg/hfvRJ4n4qG',
       },
-      // {
-      //   label: 'Instagram',
-      //   href: '#',
-      // },
     ],
   },
-  // {
-  //   section: 'Legal',
-  //   navigation: [
-  //     {
-  //       label: 'Privacy policy',
-  //       href: '/privacy-policy',
-  //     },
-  //     {
-  //       label: 'Terms of service',
-  //       href: '/terms-of-service',
-  //     },
-  //     {
-  //       label: 'Cookie policy',
-  //       href: '/cookie-policy',
-  //     },
-  //   ],
-  // },
-  // {
-  //   section: 'Email',
-  //   navigation: [
-  //     {
-  //       label: 'v.mykolaitis@modiggo.com',
-  //       href: 'mailto:v.mykolaitis@modiggo.com',
-  //     },
-  //   ],
-  // },
 ];
 
 export default navigation;

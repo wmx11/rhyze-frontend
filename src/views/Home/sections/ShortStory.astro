@@ -6,9 +6,9 @@ import Parasol from '../../../assets/parasol.png';
 import { Image } from 'astro:assets';
 ---
 
-<Section className="min-h-screen bg-dark-sand flex items-center relative">
+<Section className="bg-dark-sand min-h-screen flex items-center relative">
   <Container>
-    <div class="mx-auto max-w-2xl text-lg text-center font-bold animate">
+    <div class="mx-auto max-w-xl text-lg text-center font-bold animate">
       <p>
         The summer is here and Rhyze is bringing the sunshine! We have been hard
         at work blending together DeFi protocols and proven crypto strategies to
@@ -18,10 +18,12 @@ import { Image } from 'astro:assets';
       </p>
     </div>
   </Container>
-  <div class="absolute bottom-[30px] right-[30px]">
-    <Image src={Pinacolada} alt="Rhyze Pinacolada" />
+  <div class="absolute bottom-[30px] right-[30px] w-[150px] md:w-auto z-10">
+    <Image src={Pinacolada} alt="Rhyze Pinacolada" width={230} />
   </div>
-  <div class="absolute bottom-[90px] left-0">
-    <Image src={Parasol} alt="Rhyze Parasol" />
+  <div
+    class="absolute bottom-[65%] md:bottom-[90px] w-[250px] md:w-auto md:left-20 z-10"
+  >
+    <Image src={Parasol} alt="Rhyze Parasol" width={600} class="scale-x-[-1]" />
   </div>
 </Section>

@@ -21,13 +21,31 @@ inView(
   'section',
   (info) => {
     animate(
-      info.target.querySelectorAll('.reveal'),
+      info.target.querySelectorAll('.animate-palm-1'),
       {
-        transform: ['translateX(0px)', 'translateX(8000px)'],
+        left: ['-100%', '-650px'],
+        rotate: [0, 15],
       },
       {
-        duration: 2,
-        easing: glide(),
+        duration: 1,
+        delay: stagger(0.2),
+      }
+    );
+  },
+  { margin: '-25%' }
+);
+inView(
+  'section',
+  (info) => {
+    animate(
+      info.target.querySelectorAll('.animate-palm-2'),
+      {
+        right: ['-100%', '-700px'],
+        rotate: [0, -25],
+      },
+      {
+        duration: 1,
+        delay: stagger(0.2),
       }
     );
   },

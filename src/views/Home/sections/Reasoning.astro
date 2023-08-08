@@ -3,6 +3,7 @@ import Container from '../../../components/Container.astro';
 import H1 from '../../../components/H1.astro';
 import Section from '../../../components/Section.astro';
 import Shark from '../../../assets/shark.png';
+import SharkTerry from '../../../assets/shark_terry.png';
 import Reef from '../../../assets/reef.png';
 import { Image } from 'astro:assets';
 
@@ -24,13 +25,18 @@ const reasoning = await Astro.glob('../../../content/reasoning/*.md');
       }
     </div>
   </Container>
-  <div class="absolute top-0 right-10 float">
-    <Image src={Shark} alt="Rhyze Pinacolada" />
+  <div class="absolute top-5 right-10 float">
+    <Image
+      src={Shark}
+      alt="Rhyze Pinacolada"
+      width={130}
+      class="scale-x-[-1]"
+    />
   </div>
-  <div class="absolute top-[50%] left-10 float">
-    <Image src={Shark} alt="Rhyze Pinacolada" />
+  <div class="absolute top-[50%] md:left-10 w-[150px] md:w-auto float">
+    <Image src={SharkTerry} alt="Rhyze Pinacolada" width={330} />
   </div>
-  <div class="absolute bottom-0 right-0">
-    <Image src={Reef} alt="Rhyze Pinacolada" />
+  <div class="absolute bottom-0 right-0 w-[200px] md:w-auto">
+    <Image src={Reef} alt="Rhyze Pinacolada" width={430} />
   </div>
 </Section>

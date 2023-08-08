@@ -4,6 +4,7 @@ import H2 from '../../../components/H2.astro';
 import Section from '../../../components/Section.astro';
 import SurfBoard from '../../../assets/surf_board.png';
 import { Image } from 'astro:assets';
+import Noise from '../../../assets/noise.png';
 
 const benefits = await Astro.glob('../../../content/benefits/*.md');
 
@@ -11,7 +12,7 @@ const colLeft = benefits.slice(0, 3);
 const colRight = benefits.slice(3);
 ---
 
-<Section className="min-h-screen bg-accent">
+<Section className="min-h-screen bg-accent relative">
   <Container>
     <div class="flex flex-col md:flex-row md:justify-between gap-8">
       <div class="flex-1 space-y-16">
@@ -43,4 +44,30 @@ const colRight = benefits.slice(3);
       </div>
     </div>
   </Container>
+  <svg
+    class="absolute bottom-[-120px] w-full z-[0] overflow-hidden"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    id="Layer_1"
+    x="0px"
+    y="0px"
+    viewBox="0 0 1440 141"
+    style="enable-background:new 0 0 1440 141;"
+    xml:space="preserve"
+  >
+    <style type="text/css">
+      .st2 {
+        fill: hsl(var(--primary));
+      }
+    </style>
+    <path
+      class="st2"
+      d="M1103.4,129c572.1,22.7,336.3-9.1,914.6-44.8c11.3-9.1,27.2-33.4,0-57.9c-33.9-30.6-141.3-9.1-487.6,0  C1184.2,35.4,1103.4,46.7,730,11c-373.4-35.7-981.9,26-1086.2,35.7C-460.4,56.4-703,105.2-538.2,129c164.8,23.8,602.3,7.4,814-8.5  c211.4-15.9,255.4-14.2,825.4,8.5L1103.4,129z"
+    ></path>
+    <div
+      class="bg-[url('/noise.png')] absolute w-full bottom-0 h-[141px] mix-blend-overlay"
+    >
+    </div>
+  </svg>
 </Section>
