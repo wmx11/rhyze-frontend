@@ -1,6 +1,5 @@
 const routes = {
-  blog: '/blog',
-  resources: '/resources',
+  raffle: '/raffle',
 };
 
 export default routes;

@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import PalmTree from '../../../assets/palm_tree.png';
 import RhyzeLogo from '../../../assets/rhyze_logo_outline.png';
+import Separator1 from '../../../assets/stuff_1.png';
 import H1 from '../../../components/H1.astro';
 import HeroWrapper from '../../../components/HeroWrapper.astro';
 import Countdown from '../../../components/svelte/Countdown.svelte';
@@ -39,5 +40,9 @@ import Countdown from '../../../components/svelte/Countdown.svelte';
     class="hidden lg:block absolute top-[-20%] right-[-100%] rotate-[-25deg] z-[50] animate-palm-2"
   >
     <Image src={PalmTree} alt="Palm tree" width={1500} class="scale-x-[-1]" />
+  </div>
+
+  <div class="hidden lg:block absolute bottom-[-10px] right-[320px]">
+    <Image src={Separator1} alt="separator" />
   </div>
 </section>

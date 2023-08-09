@@ -1,0 +1,21 @@
+---
+import H1 from './H1.astro';
+import H2 from './H2.astro';
+interface Props {
+  h1?: string;
+  h2?: string;
+  html?: string;
+  content?: string;
+}
+
+const { h1, h2, html, content } = Astro.props;
+---
+
+<div class="space-y-4 animate">
+  {h1 && <H1>{h1}</H1>}
+  {h2 && <H2>{h2}</H2>}
+  <div class="text-lg">
+    {html && <Fragment set:html={html} />}
+    {content && content}
+  </div>
+</div>

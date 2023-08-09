@@ -7,11 +7,11 @@ inView(
       info.target.querySelectorAll('.animate'),
       {
         opacity: [0, 1],
-        transform: ['translateY(-150px)', 'translateY(0px)'],
+        transform: ['translateY(-90px)', 'translateY(0px)'],
       },
       {
-        duration: 1,
-        delay: stagger(0.2),
+        duration: 0.7,
+        delay: stagger(0.1),
       }
     );
   },

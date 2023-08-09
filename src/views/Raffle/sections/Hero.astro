@@ -1,0 +1,50 @@
+---
+import H1 from '../../../components/H1.astro';
+import H2 from '../../../components/H2.astro';
+import HeroWrapper from '../../../components/HeroWrapper.astro';
+---
+
+<section>
+  <HeroWrapper className="items-center justify-center">
+    <div>
+      <div class="mb-16 space-y-16 flex flex-col max-w-xl mx-auto text-center">
+        <H1 className="animate !text-7xl">Catch the raffle wave!</H1>
+        <button class="btn btn-primary btn-lg text-white font-bold animate"
+          >Enter the raffle</button
+        >
+      </div>
+      <div class="flex flex-col md:flex-row gap-6 py-10">
+        <div
+          class="card bg-dark-wet-sand text-white space-y-4 p-6 min-h-[200px] w-full max-w-[300px] shadow-md animate"
+        >
+          <H2>Ticket Price</H2>
+          <p>Price of one token is X $RHYZE</p>
+        </div>
+        <div
+          class="card bg-dark-wet-sand text-white space-y-4 p-6 min-h-[200px] w-full max-w-[300px] shadow-md animate"
+        >
+          <H2>Prize Winnings</H2>
+          <p>Stand the chance to win up to X$!</p>
+        </div>
+        <div
+          class="card bg-dark-wet-sand text-white space-y-4 p-6 min-h-[200px] w-full max-w-[300px] shadow-md animate"
+        >
+          <H2>Last Winnings</H2>
+          <p>Stand the chance to win up to X$!</p>
+        </div>
+        <div
+          class="card bg-dark-wet-sand text-white space-y-4 p-6 min-h-[200px] w-full max-w-[300px] shadow-md animate"
+        >
+          <H2>Mega Jackpot Chance</H2>
+          <p>Stand the chance to win up to X$!</p>
+        </div>
+        <div
+          class="card bg-dark-wet-sand text-white space-y-4 p-6 min-h-[200px] w-full max-w-[300px] shadow-md animate"
+        >
+          <H2>Your Chances</H2>
+          <p>Stand the chance to win up to X$!</p>
+        </div>
+      </div>
+    </div>
+  </HeroWrapper>
+</section>

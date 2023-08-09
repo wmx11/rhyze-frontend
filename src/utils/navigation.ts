@@ -1,3 +1,5 @@
+import routes from './routes';
+
 const navigation = [
   {
     label: 'dApp',
@@ -5,7 +7,7 @@ const navigation = [
   },
   {
     label: 'Raffle',
-    href: '#raffle',
+    href: routes.raffle,
   },
   {
     label: 'Whitepaper',
