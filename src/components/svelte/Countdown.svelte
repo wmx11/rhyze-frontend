@@ -7,7 +7,9 @@
   let seconds = 0;
   let hasStarted = false;
 
-  const targetTime = new Date(Date.UTC(2023, 7, 10, 19, 0, 0, 0));
+
+  // 2023-08-13 2:00 PM UTC
+  const targetTime = new Date(Date.UTC(2023, 7, 13, 2, 0, 0, 0));
 
   const checkTime = () => {
     const currentTime = new Date();

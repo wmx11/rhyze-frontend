@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
+import PalmTree from '../../../assets/palm_tree.png';
+import RhyzeLogo from '../../../assets/rhyze_logo_outline.png';
 import H1 from '../../../components/H1.astro';
 import HeroWrapper from '../../../components/HeroWrapper.astro';
-import RhyzeLogo from '../../../assets/rhyze_logo_outline.png';
-import PalmTree from '../../../assets/palm_tree.png';
 import Countdown from '../../../components/svelte/Countdown.svelte';
 ---
 
@@ -11,7 +11,12 @@ import Countdown from '../../../components/svelte/Countdown.svelte';
   <HeroWrapper className="justify-center items-center">
     <div class="space-y-12 md:space-y-16 text-center flex flex-col">
       <div class="flex items-center justify-center">
-        <Image src={RhyzeLogo} alt="Rhyze hero logo" width={200} class='w-[100px] md:w-auto'/>
+        <Image
+          src={RhyzeLogo}
+          alt="Rhyze hero logo"
+          width={200}
+          class="w-[100px] md:w-auto"
+        />
       </div>
       <H1 className="md:text-7xl animate">Rhyze and Shine</H1>
       <div class="animate">
@@ -19,9 +24,9 @@ import Countdown from '../../../components/svelte/Countdown.svelte';
       </div>
       <p class="font-bold text-3xl animate">Until fair launch</p>
       <p class="font-bold text-3xl animate">
-        Rhyze launch date: August 10 2023
+        Rhyze launch date: August 13 2023
         <br />
-        Time: 19:00 UTC
+        Time: 14:00 UTC
       </p>
     </div>
   </HeroWrapper>

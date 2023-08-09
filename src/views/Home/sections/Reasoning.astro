@@ -1,18 +1,18 @@
 ---
+import { Image } from 'astro:assets';
+import Reef from '../../../assets/reef.png';
+import Shark from '../../../assets/shark.png';
+import SharkTerry from '../../../assets/shark_terry.png';
 import Container from '../../../components/Container.astro';
 import H1 from '../../../components/H1.astro';
 import Section from '../../../components/Section.astro';
-import Shark from '../../../assets/shark.png';
-import SharkTerry from '../../../assets/shark_terry.png';
-import Reef from '../../../assets/reef.png';
-import { Image } from 'astro:assets';
 
 const reasoning = await Astro.glob('../../../content/reasoning/*.md');
 ---
 
 <Section className="relative bg-primary">
   <Container>
-    <div class="text-white text-center space-y-32 max-w-2xl mx-auto">
+    <div class="text-white text-center space-y-32 max-w-xl mx-auto">
       {
         reasoning.map((item) => (
           <div class="space-y-4 animate">
